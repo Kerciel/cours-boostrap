@@ -1,0 +1,397 @@
+/*Document INFORMATION:
+    -Nom document:Mon blog
+    -version:1.0.0
+    -Autor:Fazul
+*/
+
+/* COLORS 
+    -default colors text #eee
+    -h1                  #eee
+    -h2                  #000
+    -h3
+
+    -button
+    -button:hover
+
+    -icon               green
+
+    -border
+*/
+
+/* FONT
+    -Default   Lato
+    -subtitle
+
+*/
+
+/* CSS DIRECTORY
+    1.=GLOBAL
+    2.=HEADER
+    3.=PRODUIT
+    4.=FAMILLE
+    4.=GALLERIES PHOTO
+    5.=CLIENTS
+    6.=PACK
+    7.=CONTACT
+    8.=FOOTER
+
+
+*/
+
+/*GLOBAL
+========================================================*/
+
+html{
+    background-color: #fff;
+}
+
+h1, h2, h3, h4 {
+    font-family: "Lato", "Arial", sans-serif;
+    text-transform: uppercase;
+    letter-spacing: -1px;
+    font-weight: 300;
+    word-spacing: 8px;
+}
+
+h1 {
+    color: #eee;
+}
+
+h2 {
+    color: #000;
+    font-size: 250%;
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 30px;
+}
+
+h2::after {
+    display: block;
+    height: 2px;
+    background-color: green;
+    width: 100px;
+    content: "";
+    margin: 0 auto;
+    margin-top: 10px;
+}
+
+h3 {
+    font-size: 160%;
+
+}
+p {
+    font-size: 12px;
+    font-weight: 300;
+    line-height: 24px;
+}
+
+
+section {
+    padding: 30px 0 60px 0;
+}
+
+
+
+/*HEADER
+============================================================*/
+
+header {
+    background-image:linear-gradient(rgb(0,242,96,0.4), rgb(7,117,230,0.6)), url("../images/siamak-djamei-BTv0K50c_4M-unsplash.jpg");
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+}
+
+.home-title{
+    position: absolute;
+    top: 30%;
+}
+
+.home-title h1 {
+    font-size: 340%;
+    color: #fff;
+}
+
+.home-title h1 span {
+    font-weight: 700;
+}
+
+.home-title p {
+    color: #fff;
+}
+
+
+/* BUTTON*/
+.btn {
+    display: inline-block;
+    padding: 10px 30px;
+    text-decoration: none;
+    border-radius: 10px;
+    transition: background-color 1s, color 1s, border 1s;
+
+}
+
+.btn-full {
+    background-color: azure;
+    color: rgb(0,242,96);
+}
+
+.btn-ghost {
+    border: 1px solid #fff;
+    color: #fff;
+}
+
+.btn-full:hover {
+    background-color:rgb(0,242,96);
+    color: #fff;
+}
+
+.btn-ghost:hover {
+    background-color:rgb(0,242,96);
+    border: 1px solid rgb(0,242,96);
+    color: #fff;
+}
+
+
+/*PRODUIT
+============================================================*/
+.produit-plus {
+    margin: 20px 0;
+}
+
+.produit-plus:hover .produit-icon {
+    transform: translateX(20px);
+}
+
+.produit-img {
+    max-width: 100%;
+    height: auto;
+}
+
+.produit-icon {
+    font-size: 34px;
+    color: green;
+    transition: all 2s;
+}
+
+/*FAMILLE
+============================================================*/
+.famille {
+    background-color: rgb(172, 231, 172);
+}
+
+.famille-details {
+    background-color: #fff;
+    padding: 40px 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 10 rgb(0,0,0,0.3);
+
+}
+
+.famille-details img {
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.famille-details h4 {
+    text-align: center;
+}
+
+/*GALLERIES PHOTO
+============================================================*/
+.galerie-img {
+    margin:30px 0;
+    display: block;
+    background-size: cover;
+    background-position: top center;
+    background-repeat: no-repeat;
+    height: 300px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgb(0,0,0,0.3);
+    transition: all 2s;
+}
+.galerie-img:hover {
+    transform: translateY(20px);
+}
+
+
+.galerie-titre {
+    position: absolute;
+    bottom: 40px;
+    left: 40px;
+}
+
+.galerie-titre h4 {
+    color: #fff;
+}
+
+/*CLIENTS
+============================================================*/
+
+.clients{
+    background-image:linear-gradient(rgb(0,242,96,0.4), #38ef7d), url('../images/clients/the-paysage.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+}
+.clients h2 {
+    color: #fff;
+}
+
+.clients h2::after {
+    background-color: #fff;
+}
+
+blockquote {
+    padding: 5px;
+    font-style: italic;
+    line-height: 130%;
+    color: #fff;
+}
+
+blockquote::before {
+    content: "\201D";
+    font-size: 300%;
+    font-family: 'sanchez', serif;
+    color: rgb(255,255,255,0.5);
+}
+
+cite {
+    font-size: 90%;
+    display: block;
+    margin-top: 20px;
+}
+cite img {
+    height: 50px;
+    border-radius: 50px;
+    margin-right: 10px;
+}
+
+
+/*PACK
+============================================================*/
+.pack {
+    box-shadow: 0 0 10px rgb(0,0,0,0.3);
+    border-radius: 10px;
+}
+.pack h3 {
+    color: green;
+    font-weight: 400;
+}
+.pack h4 {
+    font-size: 200%;
+    font-weight: 100;
+}
+.pack span {
+    font-weight: 100;
+    font-size: 40%;
+    position: relative;
+    top: -15px;
+    left: 15px;
+}
+.pack-premium {
+    background-color: #45f889;
+    color: #fff;
+}
+
+.pack-title {
+    padding: 10px 10px 0 10px;
+    border-bottom: 1px solid #000;
+}
+.pack-title-premium {
+   font-size: 14px;
+    position: absolute;
+    top: 10px;
+    right: 30px;
+    background-color: #fff;
+    color: green;
+    border-radius: 30px;
+    padding: 5px;
+    text-align: center;
+    font-weight: 400;
+    
+
+}
+.pack-content ul {
+    list-style: none;
+    font-weight: 300;
+    line-height: 35px;
+    padding: 20px;
+}
+.pack-content ul li i {
+    font-size: 90%;
+    margin-right: 10px;
+}
+
+.pack-signup 
+{
+    text-align: center;
+}
+
+.pack-signup:hover .btn-pack {
+    background-color: #7bdba0;
+    
+}
+
+.btn-pack {
+    background-color: green;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.btn-pack a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.fa-circle-xmark {
+    color: red;
+    
+}
+
+.fa-circle-check {
+    color: green;
+}
+
+/*CONTACT
+============================================================*/
+
+.contact-form {
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+.contact-form label {
+    display: block;
+}
+.contact-form-message {
+    width: 150%;
+}
+.btn-contact  {
+    border-radius: 10px;
+    background-color: #38ef7d;
+    color: #fff;
+    border: 1px solid #fff;
+}
+
+.btn-contact:hover {
+    background-color: #fff;
+    color: #38ef7d;
+    border: 1px solid #38ef7d;
+}
+
+/*FOOTER
+============================================================*/
+footer {
+    background-color: rgb(31, 20, 20);
+    color: #fff;
+    height: 60px;
+    padding: 20px 20px;
+}
+
+.copyright {
+    text-align: center;
+}
+
+.copyright a {
+    color: #fff;
+}
